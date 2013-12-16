@@ -30,7 +30,7 @@ User valueUser = (User)client.get( key2 ) ;
 请确保 zookeeper 下有上述路径 /zk/memcached/wap
 
 可以根据不同的子空间实力化不同的 ZkMemcachedClient 比如 下属路径</br>
-<p>/zk/memcached/wap</p>
+<p>/zk/memcached</p>
 <p>----------------wap<br></p>
 <p>----------------------127.0.0.1:12000<br></p>
 <p>----------------------127.0.0.1:12001<br></p>
