@@ -7,13 +7,14 @@ surf-memcached
 使用方式见test package
 
 不使用 zookeeper 下的使用方式 
+<code>
 MemcachedClient client = new MemcachedClient("127.0.0.1", 12000).build("127.0.0.1", 12001).build("127.0.0.1", 12002) ;
 boolean b1 = client.set(key1, value1 ) ;
 String value = (String)client.get( key ) ;
 
 boolean b2 = client.set(key2, new User( 1002, "fangliang_1002" )  )  ;
 User valueUser = (User)client.get( key2 ) ;
-
+</code>
 详见 test包
 
 使用 zookeeper 情形下 
